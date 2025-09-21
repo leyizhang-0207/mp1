@@ -1,13 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leyi Zhang — Personal Site</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero"> Ronnie Leyi Zhang</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" data-nav>About</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#media" data-nav>Media</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+    </div>
+    <div class="progressbar" aria-hidden="true"><span id="read-progress"></span></div>
+  </header>
+
+  <section class="hero hero--aesop" id="hero" aria-label="Intro">
+    <div class="hero-split">
+      <div class="hero-media">
+        <img src="assets/pic.JPG" alt="Portrait66" />
+      </div>
+      <div class="hero-copy">
+        <h1 class="headline serif">Leyi Zhang</h1>
+        <p class="lede">CS + Linguistics @ UIUC</p>
+        <div class="cta-row">
+          <a class="btn ink" href="#experience">View Work</a>
+          <a class="btn outline" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="stripe">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-col">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <p>I’m a senior at the University of Illinois Urbana–Champaign studying Computer Science and Linguistics. I am interested in Machine Learning, Natural Language Processing, and software development.</p>
+      </div>
+      <div class="about-col">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-book"></i> </div>
+        <p>I have experience in full-stack software development, C/C++ programming, and Data Processing. I enjoy building projects that combine my technical skills with my passion for practical applications.</p>
+      </div>
+      <div class="about-col">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-camera-retro"></i> </div>
+        <p>In my free time, I enjoy photographing, painting and traveling.</p>
+      </div>
+    </div>
+
+    <div class="card muted about-contact-card">
+      <ul class="list">
+        <li><i class="fa-regular fa-building"></i> UIUC — CS & Linguistics</li>
+        <li><i class="fa-solid fa-location-dot"></i> Champaign, IL</li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/leyizhang0207" target="_blank" rel="noreferrer">linkedin.com/in/leyizhang0207</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:leyi3@illinois.edu">leyi3@illinois.edu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <section id="experience" class="stripe alt">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="cols three cards">
+
+        <div class="exp-card" tabindex="0" aria-label="Software Engineer Intern at ORNL. Click to flip for details.">
+          <div class="exp-card-inner">
+            <div class="exp-card-front">
+              <img src="assets/member-oak-ridge-laboratory.webp" alt="ORNL Logo" class="exp-logo">
+              <span class="details-prompt">View Details</span>
+            </div>
+            <div class="exp-card-back">
+              <div class="card-content">
+                <h3>Software Engineer Intern</h3>
+                <p class="company">Oak Ridge National Laboratory</p>
+                <p class="meta">Oak Ridge, TN • 05/2025 – 08/2025</p>
+                <ul>
+                  <li>Built an AI agent to streamline neutron diffraction experiment setup and data analysis.</li>
+                  <li>Engineered a system for the agent to interpret scientific intent, validate inputs, and process data.</li>
+                  <li>Integrated a RAG-enhanced LLM to deliver reliable, real-time domain answers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card" tabindex="0" aria-label="Software Engineer Intern at Nokia Shanghai Bell. Click to flip for details.">
+          <div class="exp-card-inner">
+            <div class="exp-card-front">
+              <img src="assets/nokia.jpeg" alt="Nokia Logo" class="exp-logo">
+              <span class="details-prompt">View Details</span>
+            </div>
+            <div class="exp-card-back">
+              <div class="card-content">
+                <h3>Software Engineer Intern</h3>
+                <p class="company">Nokia Shanghai Bell</p>
+                <p class="meta">06/2024 – 07/2024</p>
+                <ul>
+                  <li>Owned Vue front-end architecture; optimized workflows (-20% exec time).</li>
+                  <li>Adapted pages into existing product frameworks; smooth integration.</li>
+                  <li>Deployed with Nginx; improved scalability/reliability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card" tabindex="0" aria-label="Course Assistant at UIUC. Click to flip for details.">
+          <div class="exp-card-inner">
+            <div class="exp-card-front">
+              <img src="assets/uiuc.png" alt="UIUC Logo" class="exp-logo">
+              <span class="details-prompt">View Details</span>
+            </div>
+            <div class="exp-card-back">
+              <div class="card-content">
+                <h3>Course Assistant for CS415</h3>
+                <p class="company">University of Illinois Urbana–Champaign</p>
+                <p class="meta">08/2024 – Present</p>
+                <ul>
+                  <li>Mentored 100+ students in Unreal Engine; 95% positive feedback.</li>
+                  <li>35+ weekly office hours; deep dives into debugging + mechanics.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="stripe">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="carousel">
+        <div class="car-track">
+
+          <div class="car-slide">
+            <div class="project-item">
+              <img src="assets/2.jpg">
+              <div class="project-caption">
+                <h3>Perfume Recommender Web App</h3>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-open-modal" data-modal-target="#modal-perfume" aria-label="View details for Perfume Recommender project">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-slide">
+            <div class="project-item">
+              <img src="assets/3.jpg">
+              <div class="project-caption">
+                <h3>Email Spam Classifier</h3>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-open-modal" data-modal-target="#modal-spam" aria-label="View details for Spam Classifier project">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-slide">
+            <div class="project-item">
+              <img src="assets/1.jpg">
+              <div class="project-caption">
+                <h3>Image Processing & Virtual Mosaics with C++</h3>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-open-modal" data-modal-target="#modal-mosaic" aria-label="View details for Image Processing project">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="car-arrow left"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="car-arrow right"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="car-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="stripe alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <h3 class="skill-heading">Programming Languages</h3>
+      <div class="skill-grid">
+        <div class="skill"><i class="fa-solid fa-c"></i> C / C++</div>
+        <div class="skill"><i class="fa-brands fa-java"></i> Java</div>
+        <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="skill"><i class="fa-brands fa-js"></i> JavaScript / TypeScript</div>
+        <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+      </div>
+
+      <h3 class="skill-heading">Tools & Frameworks</h3>
+      <div class="skill-grid">
+        <div class="skill"><i class="fa-brands fa-react"></i> React.js</div>
+        <div class="skill"><i class="fa-brands fa-vuejs"></i> Vue.js</div>
+        <div class="skill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+        <div class="skill"><i class="fa-brands fa-aws"></i> AWS</div>
+        <div class="skill"><i class="fa-brands fa-docker"></i> Docker</div>
+        <div class="skill"><i class="fa-solid fa-brain"></i> PyTorch</div>
+        <div class="skill"><i class="fa-solid fa-brain"></i> TensorFlow</div>
+        <div class="skill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
+        <div class="skill"><i class="fa-solid fa-server"></i> Nginx</div>
+        <div class="skill"><i class="fa-solid fa-arrows-spin"></i> CI / CD</div>
+        <div class="skill"><i class="fa-solid fa-code"></i> VS Code</div>
+        <div class="skill"><i class="fa-brands fa-android"></i> Android Studio</div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="media">
+    <div class="parallax" aria-hidden="true">
+      <div class="parallax-inner">
+        <h3 class="serif">Leyi Zhang</h3>
+      </div>
+    </div>
+
+    <div class="video-hero">
+      <video playsinline autoplay muted loop poster="assets/image.jpg" class="video-bg">
+        <source src="assets/IMG_7237.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="video-overlay">
+          <h2 class="serif">CS + Linguistics @ UIUC</h2>
+          <a href="#projects" class="btn ink">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="stripe alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="social">
+        <a href="https://www.instagram.com/ronniezhang_0207_?igsh=MXU2cnlyMjd5dHh0Mw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" class="icon" aria-label="Instagram"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/leyizhang0207" target="_blank" rel="noreferrer" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer" class="icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Leyi Zhang • Built with HTML5, SCSS, and JavaScript</small>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-mosaic" role="dialog" aria-modal="true" aria-labelledby="modal-mosaic-title" hidden>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-mosaic-title">Image Processing & Virtual Mosaics</h3>
+      <div class="modal-body">
+        <ul>
+          <li>Engineered a K-D Tree-based Nearest Neighbor Search (NNS) algorithm, accelerating image mosaic generation by 30% and enabling the processing of 500+ images per minute on a standard workstation.</li>
+          <li>Recognized three color components (red, green, and blue) of pixels based on the multi-dimensional tree.</li>
+          <li>Improved processing speed by 30% using the QuickSelect algorithm for nearest pixel detection.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-perfume" role="dialog" aria-modal="true" aria-labelledby="modal-perfume-title" hidden>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-perfume-title">Perfume Recommender Web App</h3>
+      <div class="modal-body">
+        <ul>
+          <li>Developed a personalized perfume recommendation platform with user profile sharing to enhance engagement.</li>
+          <li>Created detailed perfume profiles with scent comparisons, user reviews, and direct purchase links.</li>
+          <li>Implemented community engagement features including user-generated reviews, wishlists, and interactive forums; increased user interaction metrics by 40% and retained 25% more active users month-over-month.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-spam" role="dialog" aria-modal="true" aria-labelledby="modal-spam-title" hidden>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-spam-title">Email Spam Classifier</h3>
+      <div class="modal-body">
+        <ul>
+          <li>Developed a spam email detection system using NLP and machine learning to improve spam classification accuracy from 86% to 94%.</li>
+          <li>Preprocessed datasets and implemented feature extraction techniques (TF-IDF, N-grams) and trained models (Logistic Regression, SVM, Random Forest) to enhance model performance.</li>
+          <li>Compared traditional models (Logistic Regression, SVM) with fine-tuned large models (BERT, RoBERTa) for benchmark evaluation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
